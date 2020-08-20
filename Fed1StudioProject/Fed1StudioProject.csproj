@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Contacts.html" />
+    <Content Include="CSS\Custom.css" />
     <Content Include="Team.html" />
     <Content Include="Classes.html" />
     <Content Include="Index.html" />
@@ -86,7 +87,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CSS\" />
     <Folder Include="Images\" />
     <Folder Include="js\" />
   </ItemGroup>
