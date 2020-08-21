@@ -1,2 +1,43 @@
-﻿body {
+﻿main {
+    background-color: #FEFFFF;
+    }
+header {
+    background-color: #A64AC9;
+    color: #FeFFFF;
 }
+footer {
+    background-color: #303C6C;
+    color: #FCCD04;
+}
+a:hover, a:active, a:focus {
+    color: 303C6C;
+    background-color: FFB48F;
+    text-decoration: underline;
+}
+/*#region Nav Bar*/
+    nav a {
+    font-weight: bold;
+    color: #303C6C;
+}
+    nav a:hover, nav a:active, nav a:focus {
+        text-decoration: none;
+    }
+nav ul {
+    background-color: #FCCD04;
+    padding: 0;
+    border-top: 2px solid #19181A;
+    border-bottom: 2px solid #19181A;
+    border-left: 2px solid #19181A;
+    border-right: 2px solid #19181A;
+}
+nav li:hover {
+    background-color: #FFB48F;
+}
+nav ul li {
+    display: inline-block; /*displays the links in a horizonal list line*/
+}
+    nav ul li a {
+        padding: .4em 1em;
+        display: block;
+    }
+    /*#endregion*/
