@@ -69,26 +69,29 @@
   <ItemGroup>
     <Content Include="Contacts.html" />
     <Content Include="CSS\Custom.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Images\alex-knight-2EJCSULRwC8-unsplash.jpg" />
+    <Content Include="Images\alexandre-debieve-FO7JIlwjOtU-unsplash.jpg" />
+    <Content Include="Images\antonio-gabola-_wZaegHzdQc-unsplash.jpg" />
+    <Content Include="Images\dose-media-DiTiYQx0mh4-unsplash.jpg" />
+    <Content Include="Images\franck-v-BkNWcumml1Q-unsplash.jpg" />
+    <Content Include="Images\franck-v-g29arbbvPjo-unsplash.jpg" />
+    <Content Include="Images\lucrezia-carnelos-IMUwe-p1yqs-unsplash.jpg" />
+    <Content Include="Images\nesa-by-makers-IgUR1iX0mqM-unsplash.jpg" />
+    <Content Include="Images\power-button-icon-31.png" />
+    <Content Include="Images\rafael-pol-6b5uqlWabB0-unsplash.jpg" />
+    <Content Include="Images\uriel-soberanes-MxVkWPiJALs-unsplash.jpg" />
+    <Content Include="Images\velito-iDK6fOujk-A-unsplash.jpg" />
     <Content Include="Team.html" />
     <Content Include="Classes.html" />
     <Content Include="Index.html" />
-    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
     <Folder Include="js\" />
+    <Folder Include="obj\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
