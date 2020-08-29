@@ -1,15 +1,17 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-main {
-    background-color: rgba(255, 255, 255, 0.9) !important;
-    color: #303C6C
+.mainWrapper {    
+background-color: rgba(255, 255, 255, 0.9) !important;
+    color: #303C6C;
+    padding-bottom: 20px;
 }
 footer {
     background-color: #303C6C;
     color: #FCCD04;
-    font-family: 'Oswald', sans-serif;
-    padding:2px;
-
+    font-family: 'Roboto Condensed', sans-serif;
+        padding:2px;
+    margin-top: 25px;
 }
 a:hover, a:active, a:focus {
     color: #303C6C;
@@ -28,11 +30,12 @@ nav ul {
     margin: 0;
 }
 nav a {
-    font-family: 'Oswald', sans-serif;    
+    font-family: 'Roboto Condensed', sans-serif;
 }
     nav a {
     font-weight: bold;
-    color: #303C6C;
+    color: #303C6C;    
+   font-size: 1.3em;
 }
     nav a:hover, nav a:active, nav a:focus {
         text-decoration: none;
@@ -52,7 +55,7 @@ nav ul li {
     display: inline-block; /*displays the links in a horizonal list line*/
 }
     nav ul li a {
-        padding: .4em 1em;
+        padding: .5em 1em;
         display: block;
     }
      /*#endregion*/
@@ -70,11 +73,14 @@ nav ul li {
 
 h1, h2, footer {
     text-align: center;
-}.underline {
+}#underline {
      text-decoration: underline;
  }
 h3, p {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;    
+}
+h1 {
+    font-family: 'Teko', sans-serif;
 }
 p {
     font-size: 1.2em;
@@ -99,7 +105,7 @@ header h1, header p {
     text-align: left;
 }
 /*#endregion*/
-/*#region styling*/
+/*#region index styling*/
 body {
     background: url(../images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg) no-repeat center fixed;
     background-size: cover;
@@ -108,7 +114,7 @@ body {
      float: left;
      height: 300px;
      margin-right: 10px;
- }
+ } 
 section.indexpic1 {
     margin: 10px;
     border: 1px solid #17e9e0;
@@ -132,17 +138,24 @@ section.indexgallery {
     float: left;
     width:50%;
     height: auto;
-    margin-right: 10px;    
+    margin-right: 35px;    
 }
 
 #indexpic3 {
     float: right;
     width: 50%;
     height: auto;
-    margin-left: 10px;   
+    margin-left: 35px;   
 }
+/*#endregion*/
+
+/*#region ClassStyling*/
 .rows {
     align-content: center;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center; 
+   
 }
 .classGallery:hover {
     border: 2px solid teal;
@@ -153,9 +166,9 @@ section.indexgallery {
     border: 1px solid #17e9e0;
     display: inline-block;
     width: 20%;
-    height: 600px;
+    height: 500px;
     padding: 1%;
-    text-align: justify;
+    vertical-align: top;
 }
 .imagetoprow {
     width: 100%;
@@ -168,31 +181,88 @@ section.indexgallery {
     align-content:center;
 }
 /*#endregion*/
-/*#region table/lists*/
-table, tr, th {
-    border: 1px solid #17E9E0;
-    border-collapse: collapse;
 
-}
-table {
-    align-content: center;
-    margin: auto;
-    color: #303C6C;
-}
-td, th {
-    padding:.3em;
-}
-.theadone {
-    background-color: #A64Ac9;
-    color: #FEFFFF
-}
-thead {
-    background-color: #FCCD04;
-}
-.contactlist.h3 {
-    font-family: 'Oswald', sans-serif;
+/*#region TeamsStyling*/
 
-    color: #303C6C;   
+.teamGallery div {
+    width: 25%;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+.teamGallery h2{
+    text-align: center;
+    padding: 0;
+    margin: 0;    
+}
+.teamPic p {
+    margin-top:0;
+    padding-top:0;
+    text-align:center;
+}
+
+.teamGallery img {
+    width: 100%;
+    height: 80%;
+}
+.teamDivs:hover {
+    border: 2px solid teal;
+    background-color: #EEFFFF;
+}
+/*section.indexpic1 {
+    margin: 10px;
     border: 1px solid #17e9e0;
-    margin:auto;
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    padding: 1%;
+    text-align: justify;
+}*/
+.teamDivs {
+    margin: 10px;
+    border: 1px solid #17e9e0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.9)
 }
+.teamPic {
+    float: left;
+    width: 2em; 
+}
+.Bio {
+    float: right;
+   
+       
+}
+
+/*<a href="#ID" >   this is for my scroll bar on the side*/
+
+
+/*<section class="teamGallery" > <section class="teamDivs" > <div class="teamPic" >*/
+
+ #cssleftColumn {
+    float: left;
+    width: 80%   
+}
+#cssRightColumn {
+    float: right;
+    width: 16%;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 4px;
+    margin-top:10px;
+    padding: 6px;
+    padding-top: 10px;
+    border: 1px solid #17e9e0;
+}
+
+
+
+.clear {
+    clear: both;
+
+/*#endregion*/   
