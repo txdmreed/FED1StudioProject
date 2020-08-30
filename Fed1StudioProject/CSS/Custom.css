@@ -154,6 +154,37 @@ section.indexgallery {
     margin-left: 35px;   
 }
 /*#endregion*/
+/*#region table/lists*/
+table, tr, th, td {
+    border: 1px solid #17E9E0;
+    border-collapse: collapse;
+}
+
+table {
+    align-content: center;
+    margin: auto;
+    color: #303C6C;
+}
+
+td, th {
+    padding: .3em;
+}
+
+.theadone {
+    background-color: #A64Ac9;
+    color: #FEFFFF
+}
+
+thead {
+    background-color: #FCCD04;
+}
+
+.contactlist.h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #303C6C;
+    border: 1px solid #17e9e0;
+    margin: auto;
+}
 
 /*#region ClassStyling*/
 .rows {
