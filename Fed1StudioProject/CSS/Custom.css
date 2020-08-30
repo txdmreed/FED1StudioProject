@@ -13,6 +13,12 @@ footer {
         padding:2px;
     margin-top: 25px;
 }
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
 a:hover, a:active, a:focus {
     color: #303C6C;
     background-color: #FFB48F;
@@ -234,11 +240,10 @@ section.indexgallery {
     float: left;
     width: 2em; 
 }
-.Bio {
-    float: right;
+
    
        
-}
+
 
 /*<a href="#ID" >   this is for my scroll bar on the side*/
 
@@ -259,7 +264,10 @@ section.indexgallery {
     padding-top: 10px;
     border: 1px solid #17e9e0;
 }
-
+.aside {
+    position: sticky !important;
+    top:0;
+}
 
 
 .clear {
