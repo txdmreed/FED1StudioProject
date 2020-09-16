@@ -1,27 +1,32 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Teko:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-.mainWrapper {    
-background-color: rgba(255, 255, 255, 0.9) !important;
+.mainWrapper {  
     color: #303C6C;
     padding-bottom: 20px;
+}
+.background {
+    background-color: rgba(255, 255, 255, 0.9);
 }
 footer {
     background-color: #303C6C;
     color: #FCCD04;
     font-family: 'Roboto Condensed', sans-serif;
-        padding:2px;
+    padding: 2px;
     margin-top: 25px;
-}
-#footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
 }
+body {
+    background: url(../images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg) no-repeat center fixed;
+    background-size: cover;
+    margin: 0;
+}
 a:hover, a:active, a:focus {
     color: #303C6C;
-    background-color: #FFB48F;
+    background-color: #f78570;
     text-decoration: underline;
 }
 .mainWrapper {
@@ -34,6 +39,7 @@ aside h2 {
 /*#region Nav*/
 nav ul {
     margin: 0;
+   
 }
 nav a {
     font-family: 'Roboto Condensed', sans-serif;
@@ -41,10 +47,11 @@ nav a {
     nav a {
     font-weight: bold;
     color: #303C6C;    
-   font-size: 1.3em;
+    font-size: 1.6em;
+    text-decoration:none;
 }
     nav a:hover, nav a:active, nav a:focus {
-        text-decoration: none;
+        text-decoration: underline;
     }
 nav ul {
     background-color: #FCCD04;
@@ -65,14 +72,15 @@ nav ul li {
         display: block;
     }
      /*#endregion*/
-    /*#region Fonts/Text*/    
+/*#region Fonts/Text*/    
  header h1, h2 {
     font-family: 'Teko', sans-serif;   
-    font-size: 2.2em;
+    font-size: 2.6em;
+    text-align: center;
     }
 #specialheading {
     font-family: 'Teko', sans-serif;
-    font-size: 4em;
+    /*font-size: 4em;*/
     text-align: center;
     margin: 0;
 }
@@ -91,35 +99,40 @@ h1 {
 p {
     font-size: 1.2em;
 }
+.teamH1 {
+    color: #EEFFFF;
+    font-size: 4em;
+    text-shadow: 1px 1px #17e9e0;
+    margin:4px auto;
+}
 /*#endregion*/
 /*#region header*/
-  
+
 header {
-    background-color: #A64AC9;
+    /*background-color: #A64AC9;*/
+    background-color: #303C6C;
     color: #FeFFFF;
 }
 #headerOverlay {
     background-image: url(../images/power-button-icon-31.png);
     background-repeat: no-repeat;
-    background-size: 60px;
-    background-position: 3%;
+    background-size: 120px;
+    background-position: 1%;
     padding: 1em;
-    margin-left:3px;
+    padding-left:0em;
+    margin-left:1px;
 }
 header h1, header p {
-    margin: 4px 0 4px 120px;
+    margin: 4px 0 4px 150px;
     text-align: left;
 }
 /*#endregion*/
 /*#region index styling*/
-body {
-    background: url(../images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg) no-repeat center fixed;
-    background-size: cover;
-    margin: 0;
-}#indexpic {
+
+#indexpic {
      float: left;
      height: 300px;
-     margin-right: 10px;
+     margin-right: 35px;
  } 
 section.indexpic1 {
     margin: 10px;
@@ -158,6 +171,7 @@ section.indexgallery {
 table, tr, th, td {
     border: 1px solid #17E9E0;
     border-collapse: collapse;
+    font-family: 'Oswald', sans-serif !important;
 }
 
 table {
@@ -165,28 +179,46 @@ table {
     margin: auto;
     color: #303C6C;
 }
+.classesTb {
+    width: 40%;
+}
 
 td, th {
     padding: .3em;
 }
 
 .theadone {
-    background-color: #A64Ac9;
+    /*background-color: #A64Ac9;*/
+    background-color: #303C6C;
     color: #FEFFFF
 }
 
 thead {
     background-color: #FCCD04;
+ 
 }
-
-.contactlist.h3 {
-    font-family: 'Oswald', sans-serif;
+/*#endregion*/ 
+/*#region Contacts*/
+    .contactList  {
+    font-family: 'Oswald', sans-serif !important;
     color: #303C6C;
     border: 1px solid #17e9e0;
     margin: auto;
+    text-align: center;
+    width: 30em;
+    font-size: 1.5em;
 }
-
+    .contactList:hover {
+        border: 1px solid teal !important ;
+        background-color: #EEFFFF;
+    }
+    #contactUs {
+        font-size: 4em;
+    }
+    /*#endregion*/
 /*#region ClassStyling*/
+
+
 .rows {
     align-content: center;
     margin: 0 auto;
@@ -202,8 +234,8 @@ thead {
     margin: 10px;
     border: 1px solid #17e9e0;
     display: inline-block;
-    width: 20%;
-    height: 500px;
+    width: 28%;
+    height: 550px;
     padding: 1%;
     vertical-align: top;
 }
@@ -218,15 +250,13 @@ thead {
     align-content:center;
 }
 /*#endregion*/
-
 /*#region TeamsStyling*/
-
-.teamGallery div {
+    .teamGallery div  {
     width: 25%;
-    height: 400px;
+    height: 500px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
+    margin-bottom:5px;
 }
 
 .teamGallery h2{
@@ -238,6 +268,8 @@ thead {
     margin-top:0;
     padding-top:0;
     text-align:center;
+
+    /*margin-right: 35px;*/
 }
 
 .teamGallery img {
@@ -271,10 +303,9 @@ thead {
     float: left;
     width: 2em; 
 }
-
-   
-       
-
+.teamPara {
+    padding-left: 28%;
+}
 
 /*<a href="#ID" >   this is for my scroll bar on the side*/
 
@@ -285,6 +316,7 @@ thead {
     float: left;
     width: 80%   
 }
+
 #cssRightColumn {
     float: right;
     width: 16%;
@@ -295,13 +327,18 @@ thead {
     padding-top: 10px;
     border: 1px solid #17e9e0;
 }
+
 .aside {
     position: sticky !important;
-    top:0;
+    top: 0;
+    font-size: 1.5em;
+    font-family: 'Teko', sans-serif;
 }
+
 
 
 .clear {
     clear: both;
-
+}
 /*#endregion*/   
+

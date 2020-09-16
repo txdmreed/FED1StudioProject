@@ -9,6 +9,7 @@
     <link href="CSS/Custom.css" rel="stylesheet" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Why do we have 2 favicon links-->
     <title>
         Class Choices
     </title>
@@ -16,13 +17,14 @@
 </head>
 <body>
     <header>
-        <div id="headerOverlay"> 
-        <h1>
-            Doctor? Doctor Who?
-        </h1>
-        <p>
-            Alonsy!
-        </p>
+        <div id="headerOverlay">
+            <h1>
+                Doctor? Doctor Who?
+            </h1>
+            <p>
+                Allons Y!
+            </p>
+        </div>
     </header>
     <section>
         <nav>
@@ -36,7 +38,7 @@
                         Classes
                     </a>
                 </li>
-                </li>
+                
                 <li>
                     <a href="Team.html">
                         Team
@@ -49,104 +51,118 @@
         </nav>
     </section>
     <main class="mainWrapper">
+        <h2 class="teamH1"> Class Schedule </h2>
+        <div>
+            <table class="classesTb background">
+                <thead>
+                    <tr>
+                        <th colspan="5" class="theadone">
+                            All classes run 2hrs.
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="yellowrow"> Class Title</th>
+                        <th class="yellowrow"> Beginner</th>
+                        <th class="yellowrow"> Intermediate </th>
+                        <th class="yellowrow"> Advanced </th>
+                </thead>
+                <tbody>                   
+                    <tr>                        
+                            <td>Robotics 101</td>
+                            <td><a href="#rob101"> Monday <br /> 8am-10am <br /> Dr. Robotnic </a> </td>
+                            <td><a href="#rob102"> Wednesday <br /> 8am-10am <br /> Dr. Robotnic </a></td>
+                            <td><a href="#rob103">Friday <br /> 8am-10am <br /> Dr. Robotnic</a> </td>                        
+                    </tr>                    
+                        <tr>
+                            <td> Managing Life </td>
+                            <td a href="manLife1"> Monday <br /> 10:30am-12:30pm <br /> Michael Scott </td>
+                            <td a href="manLife2"> Wednesday <br /> 10:30am-12:30pm <br /> Michael Scott </td>
+                            <td a href="manLife3"> Friday <br /> 10:30am-12:30pm <br /> Michael Scott </td>
+                        </tr>
+                        <tr>
+
+                            <td> Identifying Your Tribe </td>
+                            <td> Monday <br /> 1:45pm-345pm <br /> Dr. Emmet Brown </td>
+                            <td> Wednesday <br /> 1:45pm-345pm <br /> Dr. Emmet Brown </td>
+                            <td> Friday <br /> 1:45pm-345pm <br /> Dr. Emmet Brown </td>
+                        </tr>
+                        <tr>
+                            <td id="noChair"> There is No Chair </td>
+                            <td> Tuesday <br /> 8am-10am <br /> Lawrence Fishburn </td>
+                            <td> Thursday <br /> 8am-10am <br /> Lawrence Fishburn </td>
+                            <td> Saturday <br /> 8am-10am <br /> Lawrence Fishburn </td>
+                        </tr>
+                        <tr>
+                            <td id="blinkers"> Blinkers, How to: </td>
+                            <td> Tuesday <br /> 10:30am-12:30pm <br /> Dr. Richard Petty </td>
+                            <td> Thursday <br /> 10:30am-12:30pm <br /> Dr. Richard Petty </td>
+                            <td> Saturday <br /> 10:30am-12:30pm <br /> Dr. Richard Petty </td>
+                        </tr>
+                        <tr>
+                            <td id="rob202"> Robotics 202 </td>
+                            <td> Tuesday <br /> 1:45pm-345pm <br /> Dr. Richard Petty </td>
+                            <td> Thursday <br /> 1:45pm-345pm <br /> Dr. Richard Petty </td>
+                            <td> Saturday <br /> 1:45pm-345pm <br /> Dr. Richard Petty </td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+
         <section>
-            <h2>
+            <h2 class="teamH1">
                 Who Are You?
             </h2>
             <div class="rows">
-                <div class="classGallery">
-                    <img src="Images/alex-knight-2EJCSULRwC8-unsplash.jpg" alt="smiling robot" title="smiling robot" class="imagetoprow" />
-                    <h3> Robotics 101 </h3>
-                    <p>
-                        Goodbye, Clara. You are the only mystery worth solving.
-                    </p>
-                </div>
-                <div class="classGallery">
+                
+                    <div class="classGallery background">
+
+                        <img src="Images/alex-knight-2EJCSULRwC8-unsplash.jpg" alt="smiling robot" title="smiling robot" class="imagetoprow" />
+                        <h3> Robotics 101 </h3>
+i                       <p id="rob101">Begginner - Learn the basics of robotic technical jargon, code and structure. Master the vocabulary of the craft.</p>
+                        <p id="rob101">Intermediate - Actually begin crafting your new robot minion.</p>
+                        <p id="rob101">Advanced - Master the rules of robotics and how to get around them.</p>
+                    </div>
+                
+                <div class="classGallery background">
                     <img src="Images/antonio-gabola-_wZaegHzdQc-unsplash.jpg" alt="glowing marquee reading work and play" title="work and play" class="imagetoprow" />
                     <h3> How to Manage a Work/Life Seperation for Dummies </h3>
-                    <p>
-                        I need...I need...I need... fish fingers and custard!
-                    </p>
+                    <p id="manLife">Beginner - Happy hour basics. When to go and when to invite your coworkers, including how to behave around your boss.</p>
+                    <p id="manLife">Intermediate - How to have good clean fun in the work place, and how to pull off inappropriate work place behavior without being caught.</p>
+                    <p id="manLife">Advanced - How to properly play hooky and get the most out of it.</p>
                 </div>
-                <div class="classGallery">
-                    <img src="Images/franck-v-BkNWcumml1Q-unsplash.jpg" alt="a Delorian Motorcar" title="Delorian" class="imagetoprow" />
-                    <h3> How to Identify Your People </h3>
-                    <p>
-                        Oh, I always rip out the last page of a book. Then it doesn't have to end. I hate endings!
-                    </p>
+                <div class="classGallery background">
+                    <img src="Images/franck-v-BkNWcumml1Q-unsplash.jpg" alt="a Delorian Motorcar" title="Delorian" class="imagetoprow"/>                    
+                    <h3> How to Identify Your Nerd People </h3>
+                    <p id="identify">Beginner - Learning the tells of the average nerd and how to recognize them in the wild. </p>
+                    <p id="identify">Intermediate - A deeper dive into the characteristics of specific geekcomunities, as well as potential territories where these species may be found.</p>
+                    <p id="identify">Advanced - Learn more complex skills of blending in and ingratiating yourself into the local nerd population.</p>
                 </div>
             </div>
             <br />
             <div class="rows">
-                <div class="classGallery">
+                <div class="classGallery background">
                     <img src="Images/lucrezia-carnelos-IMUwe-p1yqs-unsplash.jpg" alt="Students in a futuristic learning setting using V.R. headsets in class" title="V.R. Class" class="imagebottomrow" />
-                    <h3> There Is No Chair: How to Unplug and Embrace the Truth </h3>
-                    <p>Father Christmas. Santa Claus. Or, as I’ve always known him, Jeff.</p>
+                    <h3> There Is No Chair: How to Unplug and Embrace Seated the Truth </h3>
+                    <p>Beginner - Wall sitting, and other activities to build core and leg strength.</p>
+                    <p>Intermediate - The recliner is a lie. Learning to spot the fake news and unrealities of the lounging life.</p>
+                    <p>Advanced - The standing desk, learning to embrace the hard realities of the non-sitting world.</p>
                 </div>
-                <div class="classGallery">
+                <div class="classGallery background">
                     <img src="Images/velito-iDK6fOujk-A-unsplash.jpg" alt="back end view of a sports car" title="sports car" class="imagebottomrow" />
                     <h3> All About Blinkers and How to Use Them </h3>
                     <p>
                         Whatever happens here will create its own timeline, its own reality, a temporal tipping point. The future revolves around you, here, now, so do good!
-                   </p>
+                    </p>
                 </div>
-                <div class="classGallery">
+                <div class="classGallery background">
                     <img src="Images/franck-v-g29arbbvPjo-unsplash.jpg" alt="a robot making a funny hand gesture" title="I'm a Metal Boy" class="imagebottomrow" />
-                    <h3> Robotics 102: How to Make Your Robots Less Creepy and More Relatable </h3>
+                    <h3> Robotics 202: How to Make Your Robots Less Creepy and More Relatable </h3>
                     <p>
                         There are fixed points throughout time where things must stay exactly the way they are. This is not one of them. This is an opportunity!
                     </p>
                 </div>
-            </div>         
-</section>
-        <h2> Class Schedule </h2>
-        <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="3" class="theadone">
-                            All Classes Run 2hrs 
-                        </th>
-                    </tr>
-                    <tr>
-                        <th class="yellowrow"> Class</thclass="yellowrow">
-                        <th class="yellowrow"> Instructor </th>
-                        <th class="yellowrow"> Running Days </th>                    
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> Robotics 101 </td>
-                        <td> Dr. Robotnic </td>
-                        <td> Monday </td>
-                    </tr>
-                    <tr>
-                        <td> Managing/Life </td>
-                        <td> Michael Scott </td>
-                        <td> Tuesday </td>
-                    </tr>
-                    <tr>
-                       <td> Identify Your People </td>
-                       <td> Dr. Emmet Brown </td>
-                       <td> Wednesday </td>
-                    </tr>
-                    <tr>
-                        <td> There is No Chair </td>
-                        <td> Lawrence Fishburn </td>
-                        <td> Thursday </td>
-                    </tr>
-                    <tr>
-                        <td> How to Use Blinkers </td>
-                        <td> Dr. Richard Petty</td>
-                        <td> Friday </td>
-                    </tr>
-                    <tr>
-                        <td> Robotics 102 </td>
-                        <td> Walle N. Eve </td>
-                        <td> Saturday </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+            </div>
+        </section>
     </main>
     <footer>
         &copy; 2020 Dee Reed.
